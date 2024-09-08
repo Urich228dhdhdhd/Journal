@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#dbe6f4"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/main_shape_of_registration"
+        android:elevation="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/rubik"
+            android:gravity="center"
+            android:text="@string/name_kollege"
+            android:textColor="#617492"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="@string/name_project"
+            android:textColor="#617492"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteY="65dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginBottom="5sp"
+                android:ems="5"
+                android:inputType="none"
+                android:background="@drawable/main_shape_of_registration_logandpass"
+                android:backgroundTint="#c5d2e2"
+                android:paddingLeft="15sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="#617492"
+                android:text="Логин" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginBottom="15sp"
+                android:ems="5"
+                android:inputType="none"
+                android:background="@drawable/main_shape_of_registration_logandpass"
+                android:backgroundTint="#c5d2e2"
+                android:paddingLeft="15sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="#617492"
+                android:text="Пароль" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginBottom="7sp"
+                android:ems="5"
+                android:inputType="none"
+                android:background="@drawable/main_shape_of_registration_logandpass"
+                android:backgroundTint="#c5d2e2"
+                android:paddingLeft="10sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="#617492"
+                android:text="Логин" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginBottom="5sp"
+                android:ems="5"
+                android:inputType="none"
+                android:background="@drawable/main_shape_of_registration_logandpass"
+                android:backgroundTint="#c5d2e2"
+                android:paddingLeft="10sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="#617492"
+                android:text="Логин" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Забыли пароль?"
+                android:textSize="12sp"
+                android:fontFamily="@font/rubik_light"
+                android:textColor="#4E6384"
+                android:layout_marginVertical="20sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#617492"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Сайт колледжа"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+            android:textColor="#617492"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Сообщить об ошибке"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="7dp"
+            android:fontFamily="@font/rubik_light"
+            android:gravity="center"
+
+            android:text="@string/name_buttom"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
